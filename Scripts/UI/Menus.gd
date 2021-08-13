@@ -52,8 +52,13 @@ func location_settings():
 			set_anchors_and_margins_preset(Control.PRESET_CENTER)
 		"RightMenu":
 			set_anchors_and_margins_preset(Control.PRESET_RIGHT_WIDE)
+			$VBoxContainer.rect_min_size.x = get_parent().rect_size.x * 0.4
+			$VBoxContainer.rect_size.x = get_parent().rect_size.x * 0.4
+			
 		"LeftMenu":
 			set_anchors_and_margins_preset(Control.PRESET_LEFT_WIDE)
+			$VBoxContainer.rect_min_size.x = get_parent().rect_size.x * 0.4
+			$VBoxContainer.rect_size.x = get_parent().rect_size.x * 0.4
 		"FullMenu":
 			set_anchors_and_margins_preset(Control.PRESET_WIDE)
 			$VBoxContainer.rect_min_size.y = get_parent().rect_size.y * 0.9

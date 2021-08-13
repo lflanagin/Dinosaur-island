@@ -15,6 +15,10 @@ config/description="Master Document for all projects."
 run/main_scene="res://Scenes/Main.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Mistro="*res://Backend/Mistro.tscn"
+
 [physics]
 
 common/enable_pause_aware_picking=true
