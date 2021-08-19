@@ -27,7 +27,7 @@ Included:
 * Directory structure designed to help manage large projects.
 * 3D player template based on Godot's first person shooter template (more about this in further lessons)
 * Test ground "level" 
-* Attract screen to play behind main menu
+* Attract screen to play behind main menu.
 
 
 ### Using this repository
