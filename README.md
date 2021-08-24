@@ -5,4 +5,5 @@ you chould be the small Vilociraptor or the enormus brachiosaurus
 the models are suposed to be as acurate as possible and acurately sized
 
 The game is project of love and will be worked on throuh out the year and will be playble by 2022
+it will be fully open source and i hope people will make mods or even fork it
 if you have questions please feel free to ask questions in the comments
