@@ -8,10 +8,16 @@
 
 config_version=4
 
+_global_script_classes=[  ]
+_global_script_class_icons={
+
+}
+
 [application]
 
-config/name="2021 Game Development Course"
-config/description="Master Document for all projects."
+config/name="Dinosaur_island"
+config/description="dinosaur
+"
 run/main_scene="res://Scenes/Main.tscn"
 config/icon="res://icon.png"
 
