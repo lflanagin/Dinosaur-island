@@ -1,16 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Scripts/Player/Player.gd" type="Script" id=1]
+[ext_resource path="res://Assets/Models/player/raptor.glb" type="PackedScene" id=2]
 
-[sub_resource type="PrismMesh" id=2]
-size = Vector3( 1, 1, 0.2 )
-
-[sub_resource type="SpatialMaterial" id=3]
-albedo_color = Color( 0.67451, 0.168627, 0.168627, 1 )
-
-[sub_resource type="CapsuleShape" id=1]
-radius = 0.391204
-height = 0.401674
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.605421, 1.98626, 1.2413 )
 
 [node name="PlayerTemplate" type="KinematicBody"]
 script = ExtResource( 1 )
@@ -23,11 +17,9 @@ transform = Transform( 1, 0, 0, 0, 0.98258, 0.185838, 0, -0.185838, 0.98258, 0, 
 
 [node name="Position3D" type="Position3D" parent="."]
 
-[node name="MeshInstance" type="MeshInstance" parent="Position3D"]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0.3, 0 )
-mesh = SubResource( 2 )
-material/0 = SubResource( 3 )
-
 [node name="CollisionShape" type="CollisionShape" parent="."]
-transform = Transform( 1, 0, 0, 0, -4.37114e-08, 1.13687, 0, -1, -4.96943e-08, 0, 0.665424, 0 )
+transform = Transform( -0.999788, 0.0205932, 1.02336e-09, 0, -4.37114e-08, 1.13687, 0.0205932, 0.999788, 4.96838e-08, 0.0044858, 1.41997, -0.92881 )
 shape = SubResource( 1 )
+
+[node name="raptor" parent="." instance=ExtResource( 2 )]
+transform = Transform( -0.499894, 0, -0.0105025, 0, 0.45, 0, 0.0102966, 0, -0.509892, -0.0044858, 1, -1.36438 )
