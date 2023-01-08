@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Roof_Convex_Corner_Outer_Eave.obj-31438757773d95a34d4db183926e3540.mesh"
+
+[deps]
+
+files=[ "res://.import/Roof_Convex_Corner_Outer_Eave.obj-31438757773d95a34d4db183926e3540.mesh" ]
+
+source_file="res://Assets/Models/plants/testmap/Modular Village/Roof_Convex_Corner_Outer_Eave.obj"
+dest_files=[ "res://.import/Roof_Convex_Corner_Outer_Eave.obj-31438757773d95a34d4db183926e3540.mesh", "res://.import/Roof_Convex_Corner_Outer_Eave.obj-31438757773d95a34d4db183926e3540.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

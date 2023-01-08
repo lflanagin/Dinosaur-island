@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/UI/MainMenu.gd" type="Script" id=1]
+[ext_resource path="res://oldscenes/UI/default.theme" type="Theme" id=2]
+
+[node name="MainMenu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 2 )
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1063.0
+margin_bottom = 649.0
+color = Color( 0.501961, 0.443137, 0.443137, 1 )
+
+[node name="exit" type="Button" parent="."]
+anchor_right = 0.115
+anchor_bottom = 0.289
+margin_left = 14.0
+margin_top = 23.0
+margin_right = -14.76
+margin_bottom = -97.4
+text = "EXIT"
+__meta__ = {
+"_editor_description_": "closes the game
+duh"
+}
+
+[node name="shop" type="Button" parent="."]
+margin_left = 11.0
+margin_top = 144.0
+margin_right = 107.0
+margin_bottom = 201.0
+text = "Dino shop"
+
+[node name="play" type="Button" parent="."]
+margin_left = 13.0
+margin_top = 235.0
+margin_right = 216.0
+margin_bottom = 295.0
+text = "PLAY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+[node name="title" type="RichTextLabel" parent="."]
+margin_left = 462.0
+margin_top = 142.0
+margin_right = 594.0
+margin_bottom = 169.0
+tab_size = 14
+text = "DINOSAUR ISLAND"
+
+[node name="patchnote" type="RichTextLabel" parent="."]
+margin_left = 805.0
+margin_top = 285.0
+margin_right = 1007.0
+margin_bottom = 572.0
+text = "Patch notes:
+Devolment started today!
+first five dinos are dimorphodon, tupandactlus, mussasaurus,protoceratops,
+and (outdated) velociraptor. all meant to test multible features. Dimorphodon is switching betwwen swiming and flight, protoceratops is to test building, velociraptor is to test speed limits, mussasaurus is to test diets, and tupandactlus is to test flight."

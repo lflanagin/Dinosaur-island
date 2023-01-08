@@ -1,0 +1,11 @@
+[gd_resource type="SpatialMaterial" load_steps=2 format=2]
+
+[sub_resource type="SpatialMaterial" id=22]
+
+[resource]
+render_priority = 1
+next_pass = SubResource( 22 )
+vertex_color_use_as_albedo = true
+vertex_color_is_srgb = true
+albedo_color = Color( 0.654902, 0.65098, 0.4, 1 )
+metallic_specular = 0.0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/God Rest Ye Merry Gentlmen - DJ Williams.mp3-8036b38b292df15de32da1ff665d3c36.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/BGM/BGM/God Rest Ye Merry Gentlmen - DJ Williams.mp3"
+dest_files=[ "res://.import/God Rest Ye Merry Gentlmen - DJ Williams.mp3-8036b38b292df15de32da1ff665d3c36.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mixkit-strong-wind-sea-breeze-1201.wav-5ec933382325bf6e778471ec147edfcb.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/SFX/mixkit-strong-wind-sea-breeze-1201.wav"
+dest_files=[ "res://.import/mixkit-strong-wind-sea-breeze-1201.wav-5ec933382325bf6e778471ec147edfcb.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

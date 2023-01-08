@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Phantom - Density & Time.mp3-e5990d79b7fa8fc69e62402cc807389c.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/BGM/BGM/Phantom - Density & Time.mp3"
+dest_files=[ "res://.import/Phantom - Density & Time.mp3-e5990d79b7fa8fc69e62402cc807389c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

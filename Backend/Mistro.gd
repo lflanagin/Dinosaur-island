@@ -55,7 +55,7 @@ func process_movement(obj,delta):
 
 #### We're using the documented defaults for a kinematic character from Godot's website. Edited for use in Mistro instead of needing to be copied and pasted every node.
 	
-func process_input(obj,camera,delta):
+func process_input(obj,camera,delta,model):
 
 	# ----------------------------------
 	# Walking
@@ -64,13 +64,14 @@ func process_input(obj,camera,delta):
 
 	var input_movement_vector = Vector2()
 
-	if Input.is_action_pressed("movement_forward"):
+	if Input.is_action_pressed("move_forward"):
 		input_movement_vector.y += 1
-	if Input.is_action_pressed("movement_backward"):
+		#model.get_node("AnimationPlayer").play(model.name+"_walk")
+	if Input.is_action_pressed("move_back"):
 		input_movement_vector.y -= 1
-	if Input.is_action_pressed("movement_left"):
+	if Input.is_action_pressed("move_left"):
 		input_movement_vector.x -= 1
-	if Input.is_action_pressed("movement_right"):
+	if Input.is_action_pressed("move_right"):
 		input_movement_vector.x += 1
 
 	input_movement_vector = input_movement_vector.normalized()
@@ -83,7 +84,8 @@ func process_input(obj,camera,delta):
 	# ----------------------------------
 	# Jumping
 	if obj.is_on_floor():
-		if Input.is_action_just_pressed("movement_jump"):
+		if Input.is_action_just_pressed("jump"):
+			#model.get_node("AnimationPlayer").play(model.name+"_Jump")
 			obj.vel.y = obj.JUMP_SPEED
 	# ----------------------------------
 

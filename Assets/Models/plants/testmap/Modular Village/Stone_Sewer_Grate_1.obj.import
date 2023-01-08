@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Stone_Sewer_Grate_1.obj-ca5cb4e60e3968fd1c6bbf745233febc.mesh"
+
+[deps]
+
+files=[ "res://.import/Stone_Sewer_Grate_1.obj-ca5cb4e60e3968fd1c6bbf745233febc.mesh" ]
+
+source_file="res://Assets/Models/plants/testmap/Modular Village/Stone_Sewer_Grate_1.obj"
+dest_files=[ "res://.import/Stone_Sewer_Grate_1.obj-ca5cb4e60e3968fd1c6bbf745233febc.mesh", "res://.import/Stone_Sewer_Grate_1.obj-ca5cb4e60e3968fd1c6bbf745233febc.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

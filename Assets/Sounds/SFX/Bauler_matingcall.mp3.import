@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Bauler_matingcall.mp3-b68dd945d3bea11ea774cd53591b43c3.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/SFX/Bauler_matingcall.mp3"
+dest_files=[ "res://.import/Bauler_matingcall.mp3-b68dd945d3bea11ea774cd53591b43c3.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

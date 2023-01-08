@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Wall_Prop_Lamp.obj-209ac9ab17020524417620563df6012c.mesh"
+
+[deps]
+
+files=[ "res://.import/Wall_Prop_Lamp.obj-209ac9ab17020524417620563df6012c.mesh" ]
+
+source_file="res://Assets/Models/plants/testmap/Modular Village/Wall_Prop_Lamp.obj"
+dest_files=[ "res://.import/Wall_Prop_Lamp.obj-209ac9ab17020524417620563df6012c.mesh", "res://.import/Wall_Prop_Lamp.obj-209ac9ab17020524417620563df6012c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Models/plants/tree.glb" type="PackedScene" id=1]
+[ext_resource path="res://oldscenes/Models/Misc/tree1.gd" type="Script" id=2]
+
+[sub_resource type="CylinderShape" id=1]
+radius = 0.78342
+height = 8.03058
+
+[node name="tree1" instance=ExtResource( 1 )]
+transform = Transform( 8.47581, 0, 0, 0, 8.47581, 0, 0, 0, 8.47581, 0, 0, 0 )
+script = ExtResource( 2 )
+
+[node name="StaticBody" type="StaticBody" parent="." index="17"]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody" index="0"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -5, 0 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="StaticBody" index="1"]
+transform = Transform( 1, 0, 0, 0, 0.14465, -0.989483, 0, 0.989483, 0.14465, 0, -1.83476, 2.64062 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape3" type="CollisionShape" parent="StaticBody" index="2"]
+transform = Transform( 1, 0, 0, 0, 0.387966, -0.921674, 0, 0.921674, 0.387966, 0, -4.71999, -3.12984 )
+shape = SubResource( 1 )
+
+[node name="CollisionShape4" type="CollisionShape" parent="StaticBody" index="3"]
+transform = Transform( -0.0254443, -0.921375, -0.38784, 0, 0.387966, -0.921674, 0.999676, -0.0234513, -0.00987153, 2.82296, -4.86529, -0.597484 )
+shape = SubResource( 1 )

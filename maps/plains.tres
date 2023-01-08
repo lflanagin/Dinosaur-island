@@ -1,0 +1,7 @@
+[gd_resource type="Environment" format=2]
+
+[resource]
+ambient_light_color = Color( 1, 0.980392, 0.980392, 1 )
+adjustment_enabled = true
+adjustment_brightness = 1.5
+adjustment_saturation = 2.0

@@ -1,0 +1,20 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Roof_Concave_Corner_Inner.obj-9fd604615eb490b4dfd0916367a6a98a.mesh"
+
+[deps]
+
+files=[ "res://.import/Roof_Concave_Corner_Inner.obj-9fd604615eb490b4dfd0916367a6a98a.mesh" ]
+
+source_file="res://Assets/Models/plants/testmap/Modular Village/Roof_Concave_Corner_Inner.obj"
+dest_files=[ "res://.import/Roof_Concave_Corner_Inner.obj-9fd604615eb490b4dfd0916367a6a98a.mesh", "res://.import/Roof_Concave_Corner_Inner.obj-9fd604615eb490b4dfd0916367a6a98a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+octahedral_compression=true
+optimize_mesh_flags=4286

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Bauler_broadcast.mp3-364dc26e1e91afed9991a313f3df3e0f.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/SFX/Bauler_broadcast.mp3"
+dest_files=[ "res://.import/Bauler_broadcast.mp3-364dc26e1e91afed9991a313f3df3e0f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

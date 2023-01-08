@@ -2,7 +2,7 @@ extends KinematicBody
 
 const GRAVITY = -24.8
 var vel = Vector3()
-const MAX_SPEED = 20
+const MAX_SPEED = 5
 const JUMP_SPEED = 18
 const ACCEL = 4.5
 
@@ -13,6 +13,7 @@ const MAX_SLOPE_ANGLE = 40
 
 var camera
 var rotation_helper
+var model
 
 var MOUSE_SENSITIVITY = 0.05
 
@@ -20,6 +21,7 @@ var MOUSE_SENSITIVITY = 0.05
 func _ready():
 	camera = $RotationHelper/Camera
 	rotation_helper = $RotationHelper
+	model = $Model.get_child(0)
 
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	
@@ -29,7 +31,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	Mistro.process_movement(self,delta)
-	Mistro.process_input(self,camera,delta)
+	Mistro.process_input(self,camera,delta,model)
 #	pass
 
 func _input(event):
@@ -40,3 +42,5 @@ func _input(event):
 		var camera_rot = rotation_helper.rotation_degrees
 		camera_rot.x = clamp(camera_rot.x, -70, 70)
 		rotation_helper.rotation_degrees = camera_rot
+#func _unhandled_key_input(event):
+#	if event.keyscan == KEY_W:

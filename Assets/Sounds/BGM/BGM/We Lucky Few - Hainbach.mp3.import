@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/We Lucky Few - Hainbach.mp3-9bba59e780c5519fbc03e737f1c2c07c.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/BGM/BGM/We Lucky Few - Hainbach.mp3"
+dest_files=[ "res://.import/We Lucky Few - Hainbach.mp3-9bba59e780c5519fbc03e737f1c2c07c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Tarbosaurus_friendly.mp3-1e89fa7e3d7e0427bbe1caad4e83cd33.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/SFX/Tarbosaurus_friendly.mp3"
+dest_files=[ "res://.import/Tarbosaurus_friendly.mp3-1e89fa7e3d7e0427bbe1caad4e83cd33.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

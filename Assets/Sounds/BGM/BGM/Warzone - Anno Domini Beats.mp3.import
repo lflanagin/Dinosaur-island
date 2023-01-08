@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Warzone - Anno Domini Beats.mp3-e7584c8b5ba463d4dd0da85d7ad3378c.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/BGM/BGM/Warzone - Anno Domini Beats.mp3"
+dest_files=[ "res://.import/Warzone - Anno Domini Beats.mp3-e7584c8b5ba463d4dd0da85d7ad3378c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

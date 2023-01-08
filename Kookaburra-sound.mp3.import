@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Kookaburra-sound.mp3-a8e4dc385a24bd706af9e4daf15035f9.mp3str"
+
+[deps]
+
+source_file="res://Kookaburra-sound.mp3"
+dest_files=[ "res://.import/Kookaburra-sound.mp3-a8e4dc385a24bd706af9e4daf15035f9.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

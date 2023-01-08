@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/scenes/dinosaur/Magnapaulia.tscn" type="PackedScene" id=1]
+
+[sub_resource type="CubeMesh" id=1]
+size = Vector3( 20, 2, 20 )
+
+[sub_resource type="BoxShape" id=2]
+extents = Vector3( 10.2896, 1, 10.2094 )
+
+[node name="test" type="Spatial"]
+
+[node name="MeshInstance" type="CSGMesh" parent="."]
+mesh = SubResource( 1 )
+
+[node name="StaticBody" type="StaticBody" parent="."]
+
+[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+shape = SubResource( 2 )
+
+[node name="Magnapaulia" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.986, 0 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.36605, 10.6445, 25.8333 )
+current = true

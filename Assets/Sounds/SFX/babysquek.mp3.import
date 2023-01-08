@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/babysquek.mp3-8c04c553bc6e1c4680cd3cf89ea37682.mp3str"
+
+[deps]
+
+source_file="res://Assets/Sounds/SFX/babysquek.mp3"
+dest_files=[ "res://.import/babysquek.mp3-8c04c553bc6e1c4680cd3cf89ea37682.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
