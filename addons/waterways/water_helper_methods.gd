@@ -66,7 +66,7 @@ static func generate_river_width_values(curve : Curve3D, steps : int, step_lengt
 					closest_dist = dist
 					closest_interpolate = interpolate
 					closest_point = c_point
-		river_width_values.append( lerp(widths[closest_point], widths[closest_point + 1], closest_interpolate) )
+#		river_width_values.append( lerp(widths[closest_point], widths[closest_point + 1], closest_interpolate) )
 	
 	return river_width_values
 

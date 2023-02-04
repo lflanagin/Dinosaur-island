@@ -5546,3 +5546,10 @@ anims/walkstart = SubResource( 19 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 shape = SubResource( 20 )
+
+[node name="SpotLight" type="SpotLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -0.994005, 0.109335, 0, -0.109335, -0.994005, 0, 9.0155, 22.3972 )
+light_color = Color( 0.219608, 0, 1, 1 )
+light_energy = 16.0
+spot_range = 28.7626
+spot_angle = 10.7925

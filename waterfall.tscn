@@ -1,0 +1,60 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://waterfall.tres" type="Material" id=1]
+[ext_resource path="res://foamfade.tres" type="Shader" id=2]
+[ext_resource path="res://new_shadermaterial.tres" type="Material" id=3]
+
+[sub_resource type="CylinderMesh" id=1]
+
+[sub_resource type="ShaderMaterial" id=5]
+shader = ExtResource( 2 )
+shader_param/front_color = null
+shader_param/back_color = null
+
+[sub_resource type="Gradient" id=8]
+offsets = PoolRealArray( 0, 0.476821, 1 )
+colors = PoolColorArray( 0.826172, 0.826172, 0.826172, 1, 0.596026, 0.596026, 0.596026, 1, 0, 0, 0, 1 )
+
+[sub_resource type="GradientTexture" id=9]
+gradient = SubResource( 8 )
+
+[sub_resource type="ParticlesMaterial" id=6]
+render_priority = 1
+lifetime_randomness = 1.0
+emission_shape = 2
+emission_box_extents = Vector3( 2, 0.2, 2 )
+gravity = Vector3( 0, 1, 0 )
+color = Color( 0.635294, 0.635294, 0.635294, 1 )
+color_ramp = SubResource( 9 )
+hue_variation = -1.0
+
+[sub_resource type="ShaderMaterial" id=7]
+shader = ExtResource( 2 )
+shader_param/front_color = null
+shader_param/back_color = null
+
+[sub_resource type="SphereMesh" id=3]
+material = SubResource( 7 )
+radius = 6.0
+height = 12.0
+radial_segments = 10
+rings = 10
+
+[node name="waterfall" type="Spatial"]
+
+[node name="CSGMesh" type="CSGMesh" parent="."]
+transform = Transform( 2, 0, 0, 0, 3, 0, 0, 0, 2, 0, 2.84181, 0 )
+mesh = SubResource( 1 )
+material = ExtResource( 1 )
+
+[node name="Particles" type="Particles" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.218587, -0.248145 )
+material_override = ExtResource( 3 )
+material_overlay = SubResource( 5 )
+amount = 16
+lifetime = 0.4
+speed_scale = 0.4
+randomness = 1.0
+visibility_aabb = AABB( -2.59705, -0.741183, -2.76639, 5.19411, 1.06147, 5.37945 )
+process_material = SubResource( 6 )
+draw_pass_1 = SubResource( 3 )

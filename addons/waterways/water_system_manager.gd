@@ -126,7 +126,7 @@ func generate_system_maps() -> void:
 	var filter_renderer = FilterRenderer.instance()
 	add_child(filter_renderer)
 	
-	#var dilated_height = yield(filter_renderer.apply_dilate(alpha_map, 0.1, 1.0, resolution, height_map), "completed")
+	var dilated_height = yield(filter_renderer.apply_dilate(alpha_map, 0.1, 1.0, resolution, height_map), "completed")
 	self.system_map = yield(filter_renderer.apply_combine(flow_map, flow_map, height_map), "completed")
 	
 	remove_child(filter_renderer)

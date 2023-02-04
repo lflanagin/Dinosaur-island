@@ -1,0 +1,41 @@
+[gd_resource type="ShaderMaterial" load_steps=5 format=2]
+
+[ext_resource path="res://Water.tres.gd" type="Script" id=1]
+
+[sub_resource type="Shader" id=260]
+code = "shader_type spatial;
+
+
+uniform sampler2D wave_pattern;
+uniform vec4 color:hint_color = vec4 (0.19, 0.71, 0.82, 0.44);
+uniform float height_factor:hint_range (0, 1.0) = 0.1;
+
+void vertex() {
+	vec4 wave = texture (wave_pattern, UV);
+	float displacement = sin(VERTEX.x * wave.x * TIME)
+		+ cos (VERTEX.z * wave.z * TIME);
+
+VERTEX.y += displacement * height_factor;
+
+}
+
+
+void fragment () {
+	ALBEDO = color.rgb;
+	ALPHA = color.a;
+}"
+script = ExtResource( 1 )
+
+[sub_resource type="OpenSimplexNoise" id=261]
+
+[sub_resource type="NoiseTexture" id=262]
+seamless = true
+as_normalmap = true
+noise = SubResource( 261 )
+
+[resource]
+render_priority = 1
+shader = SubResource( 260 )
+shader_param/color = Color( 0.0431373, 0.0862745, 0.529412, 0.439216 )
+shader_param/height_factor = 0.022
+shader_param/wave_pattern = SubResource( 262 )

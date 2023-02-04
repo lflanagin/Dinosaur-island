@@ -5200,7 +5200,7 @@ tracks/40/keys = PoolRealArray( 0, 1, 8.9407e-08, -3.30872e-23, -4.09782e-08, 0,
 
 [sub_resource type="CapsuleShape" id=20]
 radius = 0.570886
-height = 3.98324
+height = 2.40212
 
 [node name="Proa" type="KinematicBody"]
 script = ExtResource( 10 )
@@ -5440,6 +5440,10 @@ anims/walk = SubResource( 19 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.939969, 1.29358 )
+shape = SubResource( 20 )
+
+[node name="CollisionShape2" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.0013264, 0.999999, 0, -0.999999, 0.0013264, 0, 0.960628, 1.01552 )
 shape = SubResource( 20 )
 
 [node name="Camera" type="Camera" parent="."]

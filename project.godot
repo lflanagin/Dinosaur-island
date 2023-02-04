@@ -123,7 +123,7 @@ Steam="*res://addons/steam_api/steam.gd"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/blender_importer/plugin.cfg", "res://addons/steam_api/plugin.cfg", "res://addons/water for 3.5/addons/waterways/plugin.cfg", "res://addons/waterways/plugin.cfg", "res://addons/zylann.hterrain/plugin.cfg", "res://addons/zylann.scatter/plugin.cfg" )
+enabled=PoolStringArray( "res://addons/blender_importer/plugin.cfg", "res://addons/steam_api/plugin.cfg", "res://addons/waterways/plugin.cfg", "res://addons/zylann.scatter/plugin.cfg" )
 
 [input]
 

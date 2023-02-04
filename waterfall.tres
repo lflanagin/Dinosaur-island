@@ -1,0 +1,56 @@
+[gd_resource type="ShaderMaterial" load_steps=6 format=2]
+
+[sub_resource type="Shader" id=1]
+code = "shader_type spatial;
+render_mode unshaded;
+
+uniform sampler2D noise_tex;
+uniform sampler2D displ_tex;
+uniform vec4 top_light_color : hint_color;
+uniform vec4 top_dark_color : hint_color;
+uniform vec4 bot_light_color : hint_color;
+uniform vec4 bot_dark_color : hint_color;
+uniform float displ_amount = 0.02;
+uniform float bottom_foam_threshold = 0.48;
+uniform float speed = 0.25;
+
+void fragment(){
+	vec2 displ = texture(displ_tex, UV - TIME / 8.0).rg;
+	displ = ((displ * 2.0) - 1.0) * displ_amount;
+	
+	float noise = texture(noise_tex, vec2(UV.x, UV.y / 3.0 - TIME * speed) + displ).r;
+	noise = floor(noise * 4.0) / 4.0;
+	
+	vec4 col = mix(mix(top_dark_color, bot_dark_color, UV.y), mix(top_light_color, bot_light_color, UV.y), noise);
+	col = mix(vec4(1,1,1,1), col, step(UV.y + displ.y, bottom_foam_threshold));
+	ALBEDO = col.rbg;
+}"
+
+[sub_resource type="OpenSimplexNoise" id=2]
+lacunarity = 2.53
+
+[sub_resource type="NoiseTexture" id=3]
+width = 4000
+height = 4000
+noise = SubResource( 2 )
+
+[sub_resource type="OpenSimplexNoise" id=4]
+seed = 1
+period = 126.0
+
+[sub_resource type="NoiseTexture" id=5]
+width = 4000
+height = 4000
+noise = SubResource( 4 )
+
+[resource]
+shader = SubResource( 1 )
+shader_param/top_light_color = Color( 0, 1, 0.156863, 1 )
+shader_param/top_dark_color = Color( 0.4, 0.517647, 0.380392, 1 )
+shader_param/bot_light_color = Color( 0, 1, 0.180392, 1 )
+shader_param/bot_dark_color = Color( 0.34902, 0.505882, 0.364706, 1 )
+shader_param/displ_amount = 0.02
+shader_param/bottom_foam_threshold = 0.38
+shader_param/speed = 0.25
+shader_param/noise_tex = SubResource( 5 )
+shader_param/displ_tex = SubResource( 3 )
